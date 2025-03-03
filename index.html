@@ -1,37 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <script src="index.js" defer></script>
+
   <title>Frontend Mentor | Age calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <style type="text/tailwindcss">
+
+    @theme{
+      --color-lightGrey : #f0f0f0;
+      --color-white : #ffffff;
+      --color-purple : #854dff;
+      --color-red : #ff5757;
+      --color-black : #141414;
+      --color-grey : #dfdfdf;
+      --color-grey1 : #7a7a7a;
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+
 <body>
+  <div class="bg-lightGrey  h-screen flex flex-col text-align justify-center items-center ">
 
-  Day
-  DD
+    <div class="bg-white p-20 rounded-br-[96px] rounded-xl">
+      <div class="flex gap-10">
+        <div class="flex flex-col gap-1">
+          <label for="" class="text-grey1">DAY</label>
+          <input type="text"
+            class="border h-14 w-32 rounded-md border border-grey text-black text-4xl px-5 focus:outline-none ring-1 focus:ring-purple">
+        </div>
+        <div class="flex flex-col gap-1">
+          <label for="" class="text-grey1">MONTH</label>
+          <input type="text"
+            class="border h-14 w-32 rounded-md border border-grey text-black text-4xl px-5 focus:outline-none ring-1 focus:ring-purple">
+        </div>
+        <div class="flex flex-col gap-1">
+          <label for="" class="text-grey1">YEAR</label>
+          <input type="text"
+            class="border h-14 w-32 rounded-md border border-grey text-black text-4xl px-5 focus:outline-none ring-1 focus:ring-purple">
+        </div>
+      </div>
 
-  Month
-  MM
+      <hr class="mt-10">
+    </div>
+    <hr>
 
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="attribution mt-40">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
   </div>
+
+
 </body>
+
 </html>
