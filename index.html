@@ -24,6 +24,17 @@
       --color-grey : #dfdfdf;
       --color-grey1 : #7a7a7a;
     }
+    @font-face {
+  font-family: 'MyCustomFont';
+  src: url('/assets/fonts/Poppins-Bold.ttf') format('woff2'),
+       url('/fonts/mycustomfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {  
+    font-family: 'MyCustomerFont', sans-serif;  
+}  
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
@@ -35,36 +46,37 @@
     <div class="bg-white p-10 rounded-br-[96px] rounded-xl">
       <div class="flex gap-10">
         <div class="flex flex-col gap-1">
-          <label for="" class="text-grey1">DAY</label>
-          <input type="text"
+          <label for="day-input" class="text-grey1">DAY</label>
+          <input id="day-input" type="text"
             class="border h-14 w-32 rounded-md border border-grey text-black text-4xl px-5 focus:outline-none ring-1 focus:ring-purple">
         </div>
         <div class="flex flex-col gap-1">
-          <label for="" class="text-grey1">MONTH</label>
-          <input type="text"
+          <label for="month-input" class="text-grey1">MONTH</label>
+          <input id="month-input" type="text"
             class="border h-14 w-32 rounded-md border border-grey text-black text-4xl px-5 focus:outline-none ring-1 focus:ring-purple">
         </div>
         <div class="flex flex-col gap-1">
-          <label for="" class="text-grey1">YEAR</label>
-          <input type="text"
+          <label for="year-input" class="text-grey1">YEAR</label>
+          <input id="year-input" type="text"
             class="border h-14 w-32 rounded-md border border-grey text-black text-4xl px-5 focus:outline-none ring-1 focus:ring-purple">
         </div>
       </div>
 
-      <div class="">
+      <div>
         <hr class="mt-10 text-black w-[570px]">
-        <div class="bg-black w-20 h-20 flex justify-center items-center rounded-full absolute ml-[500px] -mt-10 cursor-pointer">
+        <div
+          class="bg-black w-20 h-20 flex justify-center items-center rounded-full absolute ml-[500px] -mt-10 cursor-pointer hover:bg-purple transition-colors duration-300">
           <img src="/assets/images/icon-arrow.svg" alt="" class="">
-          </div>
-        
         </div>
 
-        <div>
-          <p class="text-8xl"> <span class="text-purple">38<span> years</p>
-          <p class="text-8xl"> <span class="text-purple">38<span> years</p>
-          <p class="text-8xl"> <span class="text-purple">38<span> years</p>
-          </div>
-      
+      </div>
+
+      <div>
+        <p class="text-8xl"> <span class="text-purple">--</span> years</p>
+        <p class="text-8xl"> <span class="text-purple">--</span> months</p>
+        <p class="text-8xl"> <span class="text-purple">--</span> days</p>
+      </div>
+
     </div>
     <hr>
 
