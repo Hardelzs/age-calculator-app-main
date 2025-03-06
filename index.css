@@ -9,3 +9,8 @@ body {
   input{
     font-size: 28px;
   }
+
+label{
+    letter-spacing: 5px;
+    font-size: 13px;
+}
