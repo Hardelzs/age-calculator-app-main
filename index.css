@@ -2,15 +2,16 @@
 
 
 body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900;
-  }
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  background-color: #f0f0f0;
+}
 
-  input{
-    font-size: 28px;
-  }
+input {
+  font-size: 28px;
+}
 
-label{
-    letter-spacing: 5px;
-    font-size: 13px;
+label {
+  letter-spacing: 5px;
+  font-size: 13px;
 }
